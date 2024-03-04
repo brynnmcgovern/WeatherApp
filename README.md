@@ -52,7 +52,64 @@ Select the desired city from the suggestions.
 
 Click the "Get Weather" button to fetch and display weather information.
 
+## Testing
 
-### `npm run build` fails to minify
+This section provides instructions on running tests for the Weather App. The testing suite is set up using Jest and React Testing Library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Prerequisites
+
+Before running the tests, ensure that you have the following installed:
+
+Node.js and npm
+
+Installation
+
+Clone the repository:
+
+git clone <repository_url>
+
+Navigate to the project directory:
+
+cd weather-app
+
+Install dependencies:
+
+npm install
+
+Running Tests
+
+To execute the test suite, run the following command in the project directory:
+
+npm test
+
+This will trigger Jest to run the tests and display the results in the terminal.
+
+### Test Overview
+
+The testing suite includes the following test cases:
+
+renders Weather component: Tests the rendering of the main Weather component and data fetching.
+
+renders daily forecast data correctly: Verifies the correct rendering of daily forecast data.
+
+renders hourly forecast data correctly: Ensures the correct rendering of hourly forecast data for the current day.
+
+renders lunar phase data correctly: Checks if lunar phase data is rendered correctly for the next 7 days.
+
+renders moon illumination data correctly: Validates the accurate rendering of moon illumination data.
+
+Add more tests: Feel free to add more tests for different components and functionalities as needed.
+
+### Test Customization
+
+You can customize the test data and assertions in the Weather.test.js file to match your specific requirements. Update the mock data and assertions based on your expected UI and behavior.
+
+## Additional Information
+
+If you encounter any issues or failures during testing, ensure that the mock data and assertions are correctly configured and that the API URLs in the mock implementation match the URLs used in the actual application.
+
+For more details on Jest and React Testing Library, refer to their respective documentation:
+
+Jest Documentation
+React Testing Library Documentation
+
